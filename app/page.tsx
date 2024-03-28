@@ -6,29 +6,8 @@ import {
   PageHighLight,
   TrustedLogo,
 } from "@app/components/modules";
+import { getBrands } from "@app/services";
 
-const slides = [
-  {
-    imageUrl: "/images/brands/circle.png",
-    imageAlt: "Circle - Brand Logo",
-  },
-  {
-    imageUrl: "/images/brands/fox_hub.png",
-    imageAlt: "Fox Hub - Brand Logo",
-  },
-  {
-    imageUrl: "/images/brands/Treva.png",
-    imageAlt: "Treva - Brand Logo",
-  },
-  {
-    imageUrl: "/images/brands/muzica.png",
-    imageAlt: "Muzica - Brand Logo",
-  },
-  {
-    imageUrl: "/images/brands/goldline.png",
-    imageAlt: "Goldline - Brand Logo",
-  },
-];
 
 export default function Home() {
   return (
@@ -38,7 +17,7 @@ export default function Home() {
         human. With a sleek design and an easy-to-navigate app.
       </PageHighLight>
       <FeatureSection featureImage={"/images/preview-image.jpg"} featureImageAlt="Feature image"/>
-      <TrustedLogo title="Trusted by leading companies" items={slides} />
+      <TrustedLogo title="Trusted by leading companies" items={getBrands()} />
     </Box>
   );
 }
