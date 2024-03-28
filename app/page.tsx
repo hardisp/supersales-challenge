@@ -30,31 +30,15 @@ const slides = [
   },
 ];
 
-//  <Flex width={'208px'} height={'68px'} justifyContent={"center"} sx={{
-//   '& > img': {
-//     width: 'unset',
-//     objectFit: 'cover'
-//   }
-// }}
-// alignItems={'center'} >
-//   <Image
-//   src={item.imageUrl}
-//   alt={item.imageAlt}
-//   width={165}
-//   height={46}
-// />
-// </Flex>
-// )}
-
 export default function Home() {
   return (
-    <Box as="main">
+    <Box as="main" width={'100vw'} overflow={'hidden'}>
       <PageHighLight headline="Field sales software for humans">
         Supersales enables your team to perform at the highest level, yet stay
         human. With a sleek design and an easy-to-navigate app.
       </PageHighLight>
       <FeatureSection featureImage={"/images/preview-image.jpg"} featureImageAlt="Feature image"/>
-      <TrustedLogo title="Trusted by leading companies" />
+      <TrustedLogo title="Trusted by leading companies" items={slides} />
     </Box>
   );
 }

@@ -16,12 +16,8 @@ import { useEffect } from "react";
 
 export default function NavigationSlot() {
   const pathname = usePathname();
-  const { isOpen, onToggle } = useDisclosure();
+  const { isOpen, onToggle } = useDisclosure({ defaultIsOpen: false});
   const [isLG] = useMediaQuery("(min-width: 1024px)");
-
-  useEffect(() => {
-    onToggle();
-  }, [pathname]);
 
   return (
     <>

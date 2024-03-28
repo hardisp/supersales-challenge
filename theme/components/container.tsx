@@ -22,7 +22,7 @@ const ContainerComponent: ComponentStyleConfig = {
         base: '4',
       },
       py: {
-        base: "8rem",
+        base: "4rem",
       },
     },
   },
