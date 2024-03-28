@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export const marqueeVariants = {
   animate: {
-    x: [1105, -1105 * 1],
+    x: [1105, -1105],
     transition: {
       x: {
         repeat: Infinity,

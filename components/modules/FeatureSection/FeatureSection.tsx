@@ -1,13 +1,11 @@
-import { MotionBox, MotionImage, SectionInView } from "@app/components/shared";
+import { SectionInView } from "@app/components/shared";
 import { afterDelay } from "@app/components/shared/SectionInView/SectionInView";
 import { Block } from "@app/components/svg";
 import Client from "@app/components/svg/Client";
 import Sales from "@app/components/svg/Sales";
 import SalesManager from "@app/components/svg/SalesManager";
 import { Image } from "@chakra-ui/next-js";
-import { AspectRatio, Box, Container, Flex } from "@chakra-ui/react";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { AspectRatio, Box, Container, Flex } from "@chakra-ui/react"; 
 
 export interface FeatureSectionProps {
   featureImage?: string;
@@ -140,7 +138,7 @@ export default function FeatureSection({
               p={{ lg: "14px 28px", base: "6px 10px" }}
               borderRadius={"app"}
               bgColor={"state.success"}
-              mt={{ lg: "-23px", base: "-4px" }}
+              mt={{ lg: "-23px", base: "-15px" }}
               pos={"relative"}
               zIndex={1}
               justifyContent={"center"}
